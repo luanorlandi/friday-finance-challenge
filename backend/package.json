@@ -1,0 +1,27 @@
+{
+  "name": "friday-finance-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "init": "prisma migrate dev --name init",
+    "clean": "rm -rf prisma/migrations prisma/dev.db prisma/dev.db-journal",
+    "seed": "ts-node src/seed.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "prisma": "^4.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.2.2",
+    "@prisma/client": "^4.7.1",
+    "fast-csv": "^4.3.6",
+    "graphql": "^16.6.0",
+    "graphql-date-scalars": "^0.2.0"
+  }
+}
